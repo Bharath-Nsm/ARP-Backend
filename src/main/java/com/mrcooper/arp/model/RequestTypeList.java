@@ -1,6 +1,7 @@
 package com.mrcooper.arp.model;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class RequestTypeList {
@@ -8,6 +9,7 @@ public class RequestTypeList {
 	private int requestCode;
 	private int applicationCode;
 	private String requestName;
+	private List<HashMap<String, Object>> reqList = new ArrayList<HashMap<String, Object>>();
 
 	private List<String> requestTypeList = new ArrayList<String>();
 
@@ -49,6 +51,14 @@ public class RequestTypeList {
 
 	public void setApplicationCode(int applicationCode) {
 		this.applicationCode = applicationCode;
+	}
+
+	public List<HashMap<String, Object>> getReqList() {
+		return reqList;
+	}
+
+	public void setReqList(List<HashMap<String, Object>> reqList) {
+		this.reqList = reqList;
 	}
 
 

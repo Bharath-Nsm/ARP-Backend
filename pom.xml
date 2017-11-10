@@ -4,7 +4,7 @@
 	<groupId>com.mrcooper.arp</groupId>
 	<artifactId>arpMicroService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<name>Automated Request Processor</name>
 	<description>An Automatic Request Processing System</description>
 
@@ -31,14 +31,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.springframework.boot</groupId> -->
-<!-- 			<artifactId>spring-boot-starter-thymeleaf</artifactId> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.boot</groupId> -->
+		<!-- <artifactId>spring-boot-starter-thymeleaf</artifactId> -->
+		<!-- </dependency> -->
 		<dependency>
 			<groupId>com.datastax.cassandra</groupId>
 			<artifactId>cassandra-driver-core</artifactId>
-			<version>${cassandra.driver.version}</version>
+			<version>${cassandra.driver.version}</version><!--$NO-MVN-MAN-VER$ -->
 		</dependency>
 		<dependency>
 			<groupId>com.google.guava</groupId>
@@ -57,6 +57,12 @@
 					<artifactId>cassandra-driver-core</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.10</version>
 		</dependency>
 
 		<dependency>

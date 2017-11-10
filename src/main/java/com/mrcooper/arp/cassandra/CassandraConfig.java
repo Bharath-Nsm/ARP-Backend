@@ -27,9 +27,21 @@ public class CassandraConfig {
 	public static final String REQUEST_CODE = "req_id";
 	public static final String REQUEST_NAME = "req_name";
 	public static final String REQUEST_APP_ID = "app_id";
+	public static final String REQUEST_SCRIPT = "req_script";
 	public static final String REQUEST_PARM = "parm_list";
 	public static final String REQUEST_URL = "app_url";
 	public static final String REQUEST_SERVER = "app_server_name";
+
+	public static final String TICKET_TABLE = "ticket";
+	public static final String TICKET_ID = "tic_num";
+	public static final String TICKET_HEADER = "tic_header";
+	public static final String TICKET_APP_NAME = "app_name";
+	public static final String TICKET_STATUS = "tic_status";
+	public static final String TICKET_USER = "tic_user";
+	public static final String TICKET_TIME_STAMP = "tic_last_updated";
+
+	public static final String INCREMENT_TABLE = "increment";
+	public static final String OLD_ID = "old_id";
 
 	@VisibleForTesting
 	Cluster.Builder clusterBuilder() {
